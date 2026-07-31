@@ -29,7 +29,10 @@ h2, h4 {
     font-weight: 700;
 }
 
-/* Navbar */
+p {
+    text-align: justify;
+}
+
 .navbar {
     background-color: var(--blanco);
     box-shadow: var(--sombra-suave);
@@ -67,7 +70,6 @@ h2, h4 {
     width: 100%;
 }
 
-/* Header con gradiente sutil */
 header .container.text-center {
     background: linear-gradient(135deg, var(--blanco) 0%, var(--azul-claro) 100%);
     border-radius: 0 0 30px 30px;
@@ -84,7 +86,6 @@ header img:hover {
     box-shadow: var(--sombra-hover);
 }
 
-/* Secciones con acento lateral tipo CV */
 section {
     background-color: var(--blanco);
     border-left: 5px solid var(--azul-medio);
@@ -127,7 +128,6 @@ section h2 {
     transform: translateX(8px) scale(1.02);
 }
 
-/* Cards de proyectos */
 .card {
     border: none;
     border-radius: var(--radio-borde);
@@ -192,4 +192,8 @@ footer {
 .social-icon:hover {
     background-color: var(--azul-medio);
     transform: translateY(-5px);
+}
+
+footer p {
+    text-align: center;
 }
