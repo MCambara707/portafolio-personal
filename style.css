@@ -1,0 +1,195 @@
+:root {
+    --azul-oscuro: #1B2A4E;
+    --azul-principal: #2C5F8A;
+    --azul-medio: #4A90C2;
+    --azul-claro: #E8F1F8;
+    --azul-hover: #6BAED9;
+    --gris-texto: #4A4A4A;
+    --blanco: #FFFFFF;
+    --sombra-suave: 0 4px 12px rgba(27, 42, 78, 0.08);
+    --sombra-hover: 0 10px 24px rgba(27, 42, 78, 0.18);
+    --radio-borde: 14px;
+    --transicion: all 0.3s ease;
+}
+
+/* Base */
+body {
+    font-family: 'Segoe UI', Arial, sans-serif;
+    color: var(--gris-texto);
+    background-color: var(--azul-claro);
+}
+
+h1 {
+    color: var(--azul-oscuro);
+    font-weight: 800;
+}
+
+h2, h4 {
+    color: var(--azul-oscuro);
+    font-weight: 700;
+}
+
+/* Navbar */
+.navbar {
+    background-color: var(--blanco);
+    box-shadow: var(--sombra-suave);
+}
+
+.navbar-brand {
+    color: var(--azul-oscuro);
+    font-weight: 800;
+    letter-spacing: 0.5px;
+}
+
+.nav-link {
+    color: var(--gris-texto);
+    font-weight: 500;
+    position: relative;
+    transition: var(--transicion);
+}
+
+.nav-link::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -2px;
+    width: 0%;
+    height: 2px;
+    background-color: var(--azul-medio);
+    transition: var(--transicion);
+}
+
+.nav-link:hover {
+    color: var(--azul-medio);
+}
+
+.nav-link:hover::after {
+    width: 100%;
+}
+
+/* Header con gradiente sutil */
+header .container.text-center {
+    background: linear-gradient(135deg, var(--blanco) 0%, var(--azul-claro) 100%);
+    border-radius: 0 0 30px 30px;
+}
+
+header img {
+    border: 4px solid var(--azul-medio);
+    box-shadow: var(--sombra-suave);
+    transition: var(--transicion);
+}
+
+header img:hover {
+    transform: scale(1.08) rotate(-2deg);
+    box-shadow: var(--sombra-hover);
+}
+
+/* Secciones con acento lateral tipo CV */
+section {
+    background-color: var(--blanco);
+    border-left: 5px solid var(--azul-medio);
+    border-radius: var(--radio-borde);
+    box-shadow: var(--sombra-suave);
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    transition: var(--transicion);
+}
+
+section h2 {
+    display: inline-block;
+    border-bottom: 3px solid var(--azul-medio);
+    padding-bottom: 0.4rem;
+    margin-bottom: 1.5rem;
+}
+
+/* Columnas de Habilidades / Intereses */
+.habilidades-col h4,
+.intereses-col h4 {
+    display: inline-block;
+    background-color: var(--azul-medio);
+    color: var(--blanco);
+    padding: 0.4rem 1rem;
+    border-radius: 30px;
+    font-size: 1rem;
+}
+
+.list-group-item {
+    border: none;
+    background-color: var(--azul-claro);
+    margin-bottom: 8px;
+    border-radius: var(--radio-borde);
+    transition: var(--transicion);
+}
+
+.list-group-item:hover {
+    background-color: var(--azul-medio);
+    color: var(--blanco);
+    transform: translateX(8px) scale(1.02);
+}
+
+/* Cards de proyectos */
+.card {
+    border: none;
+    border-radius: var(--radio-borde);
+    box-shadow: var(--sombra-suave);
+    transition: var(--transicion);
+    overflow: hidden;
+}
+
+.card img {
+    transition: var(--transicion);
+}
+
+.card:hover {
+    box-shadow: var(--sombra-hover);
+    transform: translateY(-8px);
+}
+
+.card:hover img {
+    transform: scale(1.05);
+}
+
+.card-title {
+    color: var(--azul-oscuro);
+    font-weight: 700;
+}
+
+.btn-primary {
+    background-color: var(--azul-principal);
+    border-color: var(--azul-principal);
+    border-radius: 30px;
+    padding: 0.5rem 1.3rem;
+    transition: var(--transicion);
+}
+
+.btn-primary:hover {
+    background-color: var(--azul-oscuro);
+    border-color: var(--azul-oscuro);
+    transform: scale(1.05);
+}
+
+/* Footer con iconos circulares */
+footer {
+    background-color: var(--azul-oscuro);
+    margin-top: 3rem;
+    border-radius: 30px 30px 0 0;
+}
+
+.social-icon {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 45px;
+    height: 45px;
+    margin: 0 8px;
+    border-radius: 50%;
+    background-color: rgba(255, 255, 255, 0.1);
+    color: var(--blanco);
+    font-size: 1.3rem;
+    transition: var(--transicion);
+}
+
+.social-icon:hover {
+    background-color: var(--azul-medio);
+    transform: translateY(-5px);
+}
