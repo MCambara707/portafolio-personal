@@ -33,6 +33,17 @@ p {
     text-align: justify;
 }
 
+#biografia {
+    margin-top: 1rem;
+}
+
+header img {
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    max-width: 100%;
+}
+
 .navbar {
     background-color: var(--blanco);
     box-shadow: var(--sombra-suave);
