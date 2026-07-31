@@ -55,7 +55,7 @@ La página fue probada y verificada en los siguientes anchos de pantalla, sin ge
 ![Vista en 768px](capturas/prueba768.png)
 
 ### 1280px (escritorio)
-![Vista en 1280px](capturas/prueba1280.png)
+![Vista en 1280px](capturas/prueba.1280.png)
 
 ## 🛠️ Tecnologías utilizadas
 
